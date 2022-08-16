@@ -1,11 +1,13 @@
 package com.test.sample.utils;
 
+import com.test.sample.models.IDrawShapes;
 import com.test.sample.Factory.ShapeFactory;
 import com.test.sample.Factory.ShapesEnum;
 import com.test.sample.bridge.BluePainter;
 import com.test.sample.bridge.IShapePainterBridge;
 import com.test.sample.bridge.RedPainter;
 import com.test.sample.composite.ShapeBoxComposite;
+import com.test.sample.decorator.StarDecorator;
 import com.test.sample.models.Rectangle;
 import com.test.sample.models.Square;
 
@@ -59,4 +61,18 @@ public class GetShapeListUtils {
     	
     	return squareComposite;
 	}
+
+	public static IDrawShapes getStarDecoratedSquare() {
+		
+    	IShapePainterBridge redPainter = new RedPainter();
+    	
+    	Square square1 = (Square) ShapeFactory.getShape(ShapesEnum.SQUARE);
+    	square1.setSide(20);
+    	square1.setPainter(redPainter);
+    	StarDecorator starDecortedSquare = new StarDecorator(square1);
+    	
+    	return starDecortedSquare;
+	}
+	
+ 
 }
