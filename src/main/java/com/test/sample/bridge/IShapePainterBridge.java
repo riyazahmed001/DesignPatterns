@@ -1,4 +1,4 @@
-package com.test.sample.models;
+package com.test.sample.bridge;
 
 public interface IShapePainterBridge {
 	

@@ -1,7 +1,9 @@
-package com.test.sample.models;
+package com.test.sample.composite;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.test.sample.models.IDrawShapes;
 
 public class ShapeBoxComposite implements IDrawShapes {
 	

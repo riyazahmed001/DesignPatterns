@@ -1,7 +1,8 @@
 package com.test.sample.models;
 
-import com.test.sample.ShapeDrawer;
 import com.test.sample.ShapeAdapter.SqareToRectangleAdapter;
+import com.test.sample.bridge.IShapePainterBridge;
+import com.test.sample.utils.ShapeDrawer;
 
 public class Square implements IShape, IDrawShapes {
 	

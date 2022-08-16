@@ -1,4 +1,4 @@
-package com.test.sample;
+package com.test.sample.utils;
 
 import com.test.sample.models.Rectangle;
 

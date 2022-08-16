@@ -1,6 +1,6 @@
 package com.test.sample.models;
 
-import com.test.sample.ShapeDrawer;
+import com.test.sample.utils.ShapeDrawer;
 
 public class Rectangle implements IShape, IDrawShapes {
 	

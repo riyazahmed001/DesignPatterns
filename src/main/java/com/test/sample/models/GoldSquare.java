@@ -1,7 +1,7 @@
 package com.test.sample.models;
 
-import com.test.sample.ShapeDrawer;
 import com.test.sample.ShapeAdapter.SqareToRectangleAdapter;
+import com.test.sample.utils.ShapeDrawer;
 
 public class GoldSquare extends Square {
 
